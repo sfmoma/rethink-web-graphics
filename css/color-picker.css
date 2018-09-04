@@ -20,10 +20,7 @@
   color:#000000;
   margin-top:-2.25vw;
   margin-left:7vw;
-  -webkit-box-shadow:1px 5px 10px rgba(0,0,0,.5);
-  -moz-box-shadow:1px 5px 10px rgba(0,0,0,.5);
-  box-shadow:1px 5px 10px rgba(0,0,0,.5);
-  width:calc(11.5em + 3px); /* TODO */
+
 }
 .color-picker-container *,
 .color-picker-container *::before,
@@ -35,12 +32,12 @@
 }
 .color-picker i {
   font:inherit;
-  font-size:12px; /* measure the color control size by measuring the text size */
+  font-size:1.25vw; /* measure the color control size by measuring the text size */
 }
 .color-picker-h {
   position:relative;
-  width:1.5em;
-  height:10em;
+  width:2vw;
+  height:12.5vw;
   float:right;
   cursor:ns-resize;
   background:transparent url('color-picker-h.png') no-repeat 50% 50%;
@@ -76,8 +73,8 @@
 }
 .color-picker-sv {
   position:relative;
-  width:10em;
-  height:10em;
+  width:12.5vw;
+  height:12.5vw;
   float:left;
   margin-right:1px;
   background:transparent url('color-picker-sv.png') no-repeat 50% 50%;

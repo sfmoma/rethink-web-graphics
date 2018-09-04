@@ -10,7 +10,7 @@
 }
 
 .rangeslider--horizontal {
-  height: 5px;
+  height: 0.35vw;
   width: 100%;
 }
 
@@ -21,11 +21,11 @@
 
 .rangeslider__handle {
   background: #ff473c;
-  border: 1px solid white;
+  border: 0.075vw solid white;
   cursor: pointer;
   display: inline-block;
-  width: 15px;
-  height: 15px;
+  width: 1vw;
+  height: 1vw;
   position: absolute;
   border-radius: 100%;
 }
@@ -36,7 +36,7 @@
   cursor: pointer;
 }
 .rangeslider--horizontal .rangeslider__handle {
-  top: -6px;
+  top: -0.35vw;
   touch-action: pan-y;
   -ms-touch-action: pan-y;
 }
