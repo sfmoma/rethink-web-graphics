@@ -1,21 +1,28 @@
 /******** FONTS ********/
+
 @font-face {
   font-family: 'SFMOMADisplayRegular';
   src: url("/fonts/SFMOMADisplayRegular.eot");
-  src: url("/fonts/SFMOMADisplayRegular.eot?#iefix") format("embedded-opentype"), url("/fonts/SFMOMADisplayRegular.woff2") format("woff2"), url("/fonts/SFMOMADisplayRegular.woff") format("woff"), url("/fonts/SFMOMADisplayRegular.ttf") format("truetype"), url("/fonts/SFMOMADisplayRegular.svg#SFMOMADisplayRegular") format("svg"); }
+  src: url("/fonts/SFMOMADisplayRegular.eot?#iefix") format("embedded-opentype"), url("/fonts/SFMOMADisplayRegular.woff2") format("woff2"), url("/fonts/SFMOMADisplayRegular.woff") format("woff"), url("/fonts/SFMOMADisplayRegular.ttf") format("truetype"), url("/fonts/SFMOMADisplayRegular.svg#SFMOMADisplayRegular") format("svg");
+}
+
 @font-face {
   font-family: 'SFMOMADisplayBold';
   src: url("/fonts/SFMOMADisplayBold.eot");
-  src: url("/fonts/SFMOMADisplayBold.eot?#iefix") format("embedded-opentype"), url("/fonts/SFMOMADisplayBold.woff2") format("woff2"), url("/fonts/SFMOMADisplayBold.woff") format("woff"), url("/fonts/SFMOMADisplayBold.ttf") format("truetype"), url("/fonts/SFMOMADisplayBold.svg#SFMOMADisplayBold") format("svg"); }
+  src: url("/fonts/SFMOMADisplayBold.eot?#iefix") format("embedded-opentype"), url("/fonts/SFMOMADisplayBold.woff2") format("woff2"), url("/fonts/SFMOMADisplayBold.woff") format("woff"), url("/fonts/SFMOMADisplayBold.ttf") format("truetype"), url("/fonts/SFMOMADisplayBold.svg#SFMOMADisplayBold") format("svg");
+}
+
 @font-face {
   font-family: 'SFMOMADisplayLight';
   src: url("/fonts/SFMOMADisplayLight.eot");
-  src: url("/fonts/SFMOMADisplayLight.eot?#iefix") format("embedded-opentype"), url("/fonts/SFMOMADisplayLight.woff2") format("woff2"), url("/fonts/SFMOMADisplayLight.woff") format("woff"), url("/fonts/SFMOMADisplayLight.ttf") format("truetype"), url("/fonts/SFMOMADisplayLight.svg#SFMOMADisplayLight") format("svg"); }
+  src: url("/fonts/SFMOMADisplayLight.eot?#iefix") format("embedded-opentype"), url("/fonts/SFMOMADisplayLight.woff2") format("woff2"), url("/fonts/SFMOMADisplayLight.woff") format("woff"), url("/fonts/SFMOMADisplayLight.ttf") format("truetype"), url("/fonts/SFMOMADisplayLight.svg#SFMOMADisplayLight") format("svg");
+}
+
 
 /******** END FONTS ********/
 
 :root {
-    --main-color: ;
+  --main-color: ;
 }
 
 h1 {
@@ -53,7 +60,7 @@ body {
 
 button {
   border: 0.05vw solid white;
-  background-color:transparent;
+  background-color: transparent;
   padding: 0.25vw 2vw 0.5vw 2vw;
   font-size: 1vw;
   cursor: pointer;
@@ -66,12 +73,12 @@ button {
   font-size: 1vw;
 }
 
-button:focus{
+button:focus {
   outline: none;
 }
 
-button:hover{
-  background-color:white;
+button:hover {
+  background-color: white;
 }
 
 .buttons {
@@ -90,7 +97,7 @@ ul {
   font-size: 1.125vw;
   position: absolute;
   top: 16.5%;
-  left:4.75%
+  left: 4.75%
 }
 
 li {
@@ -117,7 +124,7 @@ p {
 }
 
 #text {
-  font-family:'SFMOMADisplayLight';
+  font-family: 'SFMOMADisplayLight';
   font-size: 1.125vw;
   margin-left: 0;
   margin-bottom: 1vw;
@@ -128,6 +135,7 @@ p {
   grid-template-columns: repeat(5, minmax(6.75vw, 0px));
   grid-auto-rows: 5.5vw;
 }
+
 
 /* .grid {
   display: grid;
@@ -143,14 +151,15 @@ p {
   grid-column: 1 / 1;
 }
 
-.grid > :first-child {
+.grid> :first-child {
   grid-row: 1 / 1;
   grid-column: 1 / 1;
 }
 
+
 /* Just to make the grid visible */
 
-.grid > * {
+.grid>* {
   background: #ffffff;
   margin: 0.5px;
 }
@@ -160,66 +169,49 @@ p {
   width: 30%;
 }
 
+
 /******** MEDIA QUERY ********/
-@media only screen
-  and (min-device-width: 375px)
-  and (max-device-width: 812px) {
-    ul {
-      display: none;
-    }
-    .header {
-      width: 100%;
-      position: absolute;
-      top:10%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      text-align: center;
-      font-family: 'SFMOMADisplayBold';
-      color: #ffffff;
-      font-size: 14vw;
-    }
+@media   (max-width: 600px) {
+  ul {
+    display: none !important;
+  }
+  .header {
+    width: 100%;
+    position: absolute;
+    top:10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: 'SFMOMADisplayBold';
+    color: #ffffff;
+    font-size: 14vw;
+  }
 
-    .container {
-      position: absolute;
-      top: 55%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      text-align: center;
-    }
+  .container {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
 
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(5, minmax(17.75vw, 0px));
-      grid-auto-rows: 15.5vw;
-    }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(17.75vw, 0px));
+    grid-auto-rows: 15.5vw;
+  }
 
-    button {
-      border: 0.05vw solid white;
-      background-color:transparent;
-      padding: 2vw 4vw 2vw 4vw;
-      font-size: 4vw;
-      cursor: pointer;
-      font-family: 'SFMOMADisplayRegular';
-      color: white;
-    }
+  button {
+    border: 0.05vw solid white;
+    background-color:transparent;
+    padding: 2vw 4vw 2vw 4vw;
+    font-size: 4vw;
+    cursor: pointer;
+    font-family: 'SFMOMADisplayRegular';
+    color: white;
+  }
 
-    .download {
-      display: none;
-    }
-}
-
-@media only screen and (max-width: 576px) {
-
-}
-
-@media screen and (max-width: 768px) {
-
-}
-
-@media screen and (min-width: 992px) {
-
-}
-
-@media screen and (min-width: 1024px) {
-
+  .download {
+    display: none;
+  }
 }
