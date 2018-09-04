@@ -171,11 +171,9 @@ p {
 
 
 /******** MEDIA QUERY ********/
-@media only screen
-  and (min-device-width: 375px)
-  and (max-device-width: 812px) {
+@media only screen and (max-width: 500px)  {
   ul {
-    display: none !important;
+    display: none;
   }
   .header {
     width: 100%;
@@ -212,6 +210,10 @@ p {
     font-family: 'SFMOMADisplayRegular';
     color: white;
   }
+
+  button:active {
+    transform: translateY(1vw);
+}
 
   .download {
     display: none;
