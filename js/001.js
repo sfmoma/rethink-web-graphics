@@ -18,6 +18,8 @@ if ($(window).width() < $(window).height()) {
     }
     var hex = rgb2hex(backgroundColor002);
     document.body.style.backgroundColor = hex;
+    slider[0].style.background = hex;
+    slider[1].style.background = hex;
     document.getElementById("button001").style.color = hex;
     document.getElementById("button001").style.backgroundColor = '#ffffff';
     document.getElementById("button003").style.color = hex;
@@ -25,6 +27,8 @@ if ($(window).width() < $(window).height()) {
   }
 }
 
+var squares = 7;
+var curves = 60;
 
 function generate() {
   var duration = 1000;
