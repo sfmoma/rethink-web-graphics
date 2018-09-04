@@ -27,8 +27,11 @@ if ($(window).width() < $(window).height()) {
   }
 }
 
-var squares = 7;
-var curves = 60;
+else {
+  var squares = 7;
+  var curves = 60;
+}
+
 
 function generate() {
   var duration = 1000;
