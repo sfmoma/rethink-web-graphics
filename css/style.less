@@ -1,0 +1,51 @@
+body {
+  margin: 15px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(87px, 0px));
+  grid-auto-rows: 73px;
+}
+
+.grid::before {
+  content: '';
+  width: 0;
+  padding-bottom: 100%;
+  grid-row: 1 / 1;
+  grid-column: 1 / 1;
+}
+
+.grid > :first-child {
+  grid-row: 1 / 1;
+  grid-column: 1 / 1;
+}
+
+/* Just to make the grid visible */
+
+.grid > * {
+  background: rgba(255,0,0);
+  margin: 0.5px;
+  border-top-right-radius: $radius-size;
+}
+
+.grid > :nth-child(2) {
+  background: rgba(255,0,0);
+  border-top-right-radius: 100px;
+}
+
+
+.grid > :nth-child(10) {
+  background: rgba(255,0,0);
+  border-bottom-left-radius: 100px;
+}
+
+.grid > :nth-child(25) {
+  background: rgba(255,0,0);
+  border-bottom-right-radius: 100px;
+}
+
+.grid > :nth-child(26) {
+  background: rgba(255,0,0);
+  border-bottom-left-radius: 100px;
+}

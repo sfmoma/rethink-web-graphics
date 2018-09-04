@@ -1,0 +1,47 @@
+.rangeslider,
+.rangeslider__fill {
+  display: block;
+  border-radius: 50px;
+}
+
+.rangeslider {
+  background: #ffffff;
+  position: relative;
+}
+
+.rangeslider--horizontal {
+  height: 5px;
+  width: 100%;
+}
+
+.rangeslider__fill {
+  background: #ffffff;
+  position: absolute;
+}
+
+.rangeslider__handle {
+  background: #ff473c;
+  border: 1px solid white;
+  cursor: pointer;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  border-radius: 100%;
+}
+.rangeslider__handle:after {
+  cursor: pointer;
+}
+.rangeslider__handle:active, .rangeslider--active .rangeslider__handle {
+  cursor: pointer;
+}
+.rangeslider--horizontal .rangeslider__handle {
+  top: -6px;
+  touch-action: pan-y;
+  -ms-touch-action: pan-y;
+}
+.rangeslider--vertical .rangeslider__handle {
+  left: 0px;
+  touch-action: pan-x;
+  -ms-touch-action: pan-x;
+}
