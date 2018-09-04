@@ -47,8 +47,12 @@ if ($(window).width() > $(window).height()) {
     var hex = rgb2hex(backgroundColor002);
     this.target.innerHTML = hex;
     this.target.value = hex;
+    slider[0].style.background = hex;
+    slider[1].style.background = hex;
     document.body.style.backgroundColor = hex;
     document.getElementById("button001").style.color = hex;
     document.getElementById("button001").style.backgroundColor = '#ffffff';
+    document.getElementById("button003").style.color = hex;
+    document.getElementById("button003").style.backgroundColor = '#ffffff';
   });
 }

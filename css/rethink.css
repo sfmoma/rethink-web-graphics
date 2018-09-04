@@ -73,6 +73,14 @@ button {
   font-size: 1vw;
 }
 
+#button002 {
+  margin-left: 2vw;
+}
+
+#button003 {
+  display: none;
+}
+
 button:focus {
   outline: none;
 }
@@ -212,8 +220,14 @@ p {
   }
 
   button:active {
-    transform: translateY(1vw);
-}
+    transform: translateY(1.75vw);
+  }
+
+  #button003 {
+    margin-left: 10vw;
+    display: inline;
+    padding: 2vw 7vw 2vw 7vw;
+  }
 
   .download {
     display: none;

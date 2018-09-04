@@ -3,6 +3,18 @@ var picker = document.querySelectorAll('input, button'),
 var buttons = document.querySelectorAll('button');
 var slider = document.getElementsByClassName("rangeslider__handle");
 
+var mql = window.matchMedia('(max-width: 500px)');
+
+function screenTest(e) {
+  if (e.matches) {
+    /* the viewport is 600 pixels wide or less */
+  } else {
+    /* the viewport is more than than 600 pixels wide */
+  }
+}
+
+mql.addListener(screenTest);
+
 picker.on("change", function(color) {
   this.target.innerHTML = '#' + color;
   this.target.value = '#' + color;
