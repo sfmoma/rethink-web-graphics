@@ -2,20 +2,20 @@
 
 @font-face {
   font-family: 'SFMOMADisplayRegular';
-  src: url("/fonts/SFMOMADisplayRegular.eot");
-  src: url("/fonts/SFMOMADisplayRegular.eot?#iefix") format("embedded-opentype"), url("/fonts/SFMOMADisplayRegular.woff2") format("woff2"), url("/fonts/SFMOMADisplayRegular.woff") format("woff"), url("/fonts/SFMOMADisplayRegular.ttf") format("truetype"), url("/fonts/SFMOMADisplayRegular.svg#SFMOMADisplayRegular") format("svg");
+  src: url("../fonts/SFMOMADisplayRegular.eot");
+  src: url("../fonts/SFMOMADisplayRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/SFMOMADisplayRegular.woff2") format("woff2"), url("../fonts/SFMOMADisplayRegular.woff") format("woff"), url("../fonts/SFMOMADisplayRegular.ttf") format("truetype"), url("../fonts/SFMOMADisplayRegular.svg#SFMOMADisplayRegular") format("svg");
 }
 
 @font-face {
   font-family: 'SFMOMADisplayBold';
-  src: url("/fonts/SFMOMADisplayBold.eot");
-  src: url("/fonts/SFMOMADisplayBold.eot?#iefix") format("embedded-opentype"), url("/fonts/SFMOMADisplayBold.woff2") format("woff2"), url("/fonts/SFMOMADisplayBold.woff") format("woff"), url("/fonts/SFMOMADisplayBold.ttf") format("truetype"), url("/fonts/SFMOMADisplayBold.svg#SFMOMADisplayBold") format("svg");
+  src: url("../fonts/SFMOMADisplayBold.eot");
+  src: url("../fonts/SFMOMADisplayBold.eot?#iefix") format("embedded-opentype"), url("../fonts/SFMOMADisplayBold.woff2") format("woff2"), url("../fonts/SFMOMADisplayBold.woff") format("woff"), url("../fonts/SFMOMADisplayBold.ttf") format("truetype"), url("../fonts/SFMOMADisplayBold.svg#SFMOMADisplayBold") format("svg");
 }
 
 @font-face {
   font-family: 'SFMOMADisplayLight';
-  src: url("/fonts/SFMOMADisplayLight.eot");
-  src: url("/fonts/SFMOMADisplayLight.eot?#iefix") format("embedded-opentype"), url("/fonts/SFMOMADisplayLight.woff2") format("woff2"), url("/fonts/SFMOMADisplayLight.woff") format("woff"), url("/fonts/SFMOMADisplayLight.ttf") format("truetype"), url("/fonts/SFMOMADisplayLight.svg#SFMOMADisplayLight") format("svg");
+  src: url("../fonts/SFMOMADisplayLight.eot");
+  src: url("../fonts/SFMOMADisplayLight.eot?#iefix") format("embedded-opentype"), url("../fonts/SFMOMADisplayLight.woff2") format("woff2"), url("../fonts/SFMOMADisplayLight.woff") format("woff"), url("../fonts/SFMOMADisplayLight.ttf") format("truetype"), url("../fonts/SFMOMADisplayLight.svg#SFMOMADisplayLight") format("svg");
 }
 
 
