@@ -8,41 +8,10 @@
   src: url("/fonts/SFMOMADisplayBold.eot");
   src: url("/fonts/SFMOMADisplayBold.eot?#iefix") format("embedded-opentype"), url("/fonts/SFMOMADisplayBold.woff2") format("woff2"), url("/fonts/SFMOMADisplayBold.woff") format("woff"), url("/fonts/SFMOMADisplayBold.ttf") format("truetype"), url("/fonts/SFMOMADisplayBold.svg#SFMOMADisplayBold") format("svg"); }
 @font-face {
-  font-family: 'SFMOMADisplayHeavy';
-  src: url("/fonts/SFMOMADisplayHeavy.eot");
-  src: url("/fonts/SFMOMADisplayHeavy.eot?#iefix") format("embedded-opentype"), url("/fonts/SFMOMADisplayHeavy.woff2") format("woff2"), url("/fonts/SFMOMADisplayHeavy.woff") format("woff"), url("/fonts/SFMOMADisplayHeavy.ttf") format("truetype"), url("/fonts/SFMOMADisplayHeavy.svg#SFMOMADisplayHeavy") format("svg"); }
-@font-face {
-  font-family: 'SFMOMADisplayMedium';
-  src: url("/fonts/SFMOMADisplayMedium.eot");
-  src: url("/fonts/SFMOMADisplayMedium.eot?#iefix") format("embedded-opentype"), url("/fonts/SFMOMADisplayMedium.woff2") format("woff2"), url("/fonts/SFMOMADisplayMedium.woff") format("woff"), url("/fonts/SFMOMADisplayMedium.ttf") format("truetype"), url("/fonts/SFMOMADisplayMedium.svg#SFMOMADisplayMedium") format("svg"); }
-@font-face {
   font-family: 'SFMOMADisplayLight';
   src: url("/fonts/SFMOMADisplayLight.eot");
   src: url("/fonts/SFMOMADisplayLight.eot?#iefix") format("embedded-opentype"), url("/fonts/SFMOMADisplayLight.woff2") format("woff2"), url("/fonts/SFMOMADisplayLight.woff") format("woff"), url("/fonts/SFMOMADisplayLight.ttf") format("truetype"), url("/fonts/SFMOMADisplayLight.svg#SFMOMADisplayLight") format("svg"); }
-@font-face {
-  font-family: 'SFMOMATextRegular';
-  src: url("/fonts/SFMOMATextRegular.eot");
-  src: url("/fonts/SFMOMATextRegular.eot?#iefix") format("embedded-opentype"), url("/fonts/SFMOMATextRegular.woff") format("woff"), url("/fonts/SFMOMATextRegular.ttf") format("truetype"), url("/fonts/SFMOMATextRegular.svg#SFMOMATextRegular") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: 'SFMOMAText';
-  src: url("/fonts/SFMOMATextRegularItalic.eot");
-  src: url("/fonts/SFMOMATextRegularItalic.eot?#iefix") format("embedded-opentype"), url("/fonts/SFMOMATextRegularItalic.woff") format("woff"), url("/fonts/SFMOMATextRegularItalic.ttf") format("truetype"), url("/fonts/SFMOMATextRegularItalic.svg#SFMOMATextRegularItalic") format("svg");
-  font-weight: normal;
-  font-style: italic; }
-@font-face {
-  font-family: 'SFMOMATextBold';
-  src: url("/fonts/SFMOMATextBold.eot");
-  src: url("/fonts/SFMOMATextBold.eot?#iefix") format("embedded-opentype"), url("/fonts/SFMOMATextBold.woff") format("woff"), url("/fonts/SFMOMATextBold.ttf") format("truetype"), url("/fonts/SFMOMATextBold.svg#SFMOMATextBold") format("svg");
-  font-weight: bold;
-  font-style: normal; }
-@font-face {
-  font-family: 'SFMOMAText';
-  src: url("/fonts/SFMOMATextBoldItalic.eot");
-  src: url("/fonts/SFMOMATextBoldItalic.eot?#iefix") format("embedded-opentype"), url("/fonts/SFMOMATextBoldItalic.woff") format("woff"), url("/fonts/SFMOMATextBoldItalic.ttf") format("truetype"), url("/fonts/SFMOMATextBoldItalic.svg#SFMOMATextBoldItalic") format("svg");
-  font-weight: bold;
-  font-style: italic; }
+
 /******** END FONTS ********/
 
 :root {
@@ -154,23 +123,6 @@ p {
   margin-bottom: 1vw;
 }
 
-/* input {
-  background-color: transparent;
-  color: white;
-  font-family: 'SFMOMADisplayRegular';
-  font-size: 0.vw;
-  border: 1px solid white;
-  padding: 0.5vw 0vw 0.5vw 0.5vw;
-}
-
-input:focus {
-  outline: none;
-} */
-
-.download {
-  margin-left: 2vw;
-}
-
 .grid {
   display: grid;
   grid-template-columns: repeat(5, minmax(6.75vw, 0px));
@@ -206,4 +158,64 @@ input:focus {
 #sfmoma {
   margin-top: 30%;
   width: 30%;
+}
+
+/******** MEDIA QUERY ********/
+@media screen and (max-width: 576px) {
+  ul {
+    display: none;
+  }
+  .header {
+    width: 100%;
+    position: absolute;
+    top:10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: 'SFMOMADisplayBold';
+    color: #ffffff;
+    font-size: 14vw;
+  }
+
+  .container {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(17.75vw, 0px));
+    grid-auto-rows: 15.5vw;
+  }
+
+  button {
+    border: 0.05vw solid white;
+    background-color:transparent;
+    padding: 2vw 4vw 2vw 4vw;
+    font-size: 4vw;
+    cursor: pointer;
+    font-family: 'SFMOMADisplayRegular';
+    color: white;
+  }
+
+  .download {
+    display: none;
+  }
+
+
+}
+
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (min-width: 992px) {
+
+}
+
+@media screen and (min-width: 1024px) {
+
 }
