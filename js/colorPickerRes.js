@@ -2,11 +2,13 @@ var picker = document.querySelectorAll('input, button'),
   picker = new CP(picker[0]);
 var buttons = document.querySelectorAll('button');
 var slider = document.getElementsByClassName("rangeslider__handle");
+var hexColor;
 
 if ($(window).width() > $(window).height()) {
   picker.on("change", function(color) {
     this.target.innerHTML = '#' + color;
     this.target.value = '#' + color;
+    hexColor = '#' + color;
     document.body.style.backgroundColor = '#' + color;
     slider[0].style.background = '#' + color;
     slider[1].style.background = '#' + color;
@@ -29,6 +31,23 @@ if ($(window).width() > $(window).height()) {
       document.getElementById("button002").style.color = '#ffffff';
     });
   });
+
+  function print() {
+    domtoimage.toPng(document.getElementById('squares'), {
+      quality: 1,
+      bgcolor: hexColor,
+      style: { 'margin': '7.5vw 0 0 7.5vw'},
+      height: 500,
+      width: 510
+    })
+    .then(function(dataUrl) {
+      var link = document.createElement('a');
+      link.download = 'rethink.png';
+      link.href = dataUrl;
+      link.click();
+    });
+  }
+
 } else {
   picker.on("change", function(color) {
     rBg = Math.floor(Math.random() * 255);

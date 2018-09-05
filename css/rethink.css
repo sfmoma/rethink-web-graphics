@@ -89,6 +89,10 @@ button:hover {
   background-color: white;
 }
 
+button:active {
+  transform: translateY(0.25vw);
+}
+
 .buttons {
   margin-top: 10%;
 }
@@ -140,7 +144,7 @@ p {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(5, minmax(6.75vw, 0px));
+  grid-template-columns: repeat(5, minmax(6.75vw, 0vw));
   grid-auto-rows: 5.5vw;
 }
 
@@ -167,7 +171,7 @@ p {
 
 /* Just to make the grid visible */
 
-.grid>* {
+.grid > * {
   background: #ffffff;
   margin: 0.5px;
 }

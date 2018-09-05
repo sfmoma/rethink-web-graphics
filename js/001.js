@@ -212,21 +212,6 @@ function generate() {
   /******** END ANIMATE BORDER RADIUS ********/
 }
 
-function print() {
-  domtoimage.toPng(document.getElementById('squares'), {
-    quality: 1,
-    bgcolor: 'transparent',
-    height: 438,
-    width: 435
-  })
-  .then(function(dataUrl) {
-    var link = document.createElement('a');
-    link.download = 'rethink.png';
-    link.href = dataUrl;
-    link.click();
-  });
-}
-
 $('input[type="range1"]').rangeslider({
     polyfill: false,
 
