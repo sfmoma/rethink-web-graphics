@@ -35,6 +35,7 @@ if ($(window).width() > $(window).height()) {
   function print() {
     domtoimage.toPng(document.getElementById('squares'), {
       quality: 1,
+      // bgcolor: 'transparent',
       bgcolor: hexColor,
       style: { 'margin': '7.5vw 0 0 8.5vw'},
       height: 500,
@@ -42,7 +43,7 @@ if ($(window).width() > $(window).height()) {
     })
     .then(function(dataUrl) {
       var link = document.createElement('a');
-      link.download = 'rethink.png';
+      link.download = 'rethink:web.png';
       link.href = dataUrl;
       link.click();
     });
