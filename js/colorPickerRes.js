@@ -36,9 +36,9 @@ if ($(window).width() > $(window).height()) {
     domtoimage.toPng(document.getElementById('squares'), {
       quality: 1,
       bgcolor: hexColor,
-      style: { 'margin': '7.5vw 0 0 7.5vw'},
+      style: { 'margin': '7.5vw 0 0 8.5vw'},
       height: 500,
-      width: 510
+      width: 525
     })
     .then(function(dataUrl) {
       var link = document.createElement('a');
