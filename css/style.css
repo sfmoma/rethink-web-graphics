@@ -2,20 +2,20 @@
 
 @font-face {
   font-family: 'SFMOMADisplayRegular';
-  src: url("../fonts/SFMOMADisplayRegular.eot");
-  src: url("../fonts/SFMOMADisplayRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/SFMOMADisplayRegular.woff2") format("woff2"), url("../fonts/SFMOMADisplayRegular.woff") format("woff"), url("../fonts/SFMOMADisplayRegular.ttf") format("truetype"), url("../fonts/SFMOMADisplayRegular.svg#SFMOMADisplayRegular") format("svg");
+  src: url("/fonts/SFMOMADisplayRegular.eot");
+  src: url("/fonts/SFMOMADisplayRegular.eot?#iefix") format("embedded-opentype"), url("/fonts/SFMOMADisplayRegular.woff2") format("woff2"), url("/fonts/SFMOMADisplayRegular.woff") format("woff"), url("/fonts/SFMOMADisplayRegular.ttf") format("truetype"), url("/fonts/SFMOMADisplayRegular.svg#SFMOMADisplayRegular") format("svg");
 }
 
 @font-face {
   font-family: 'SFMOMADisplayBold';
-  src: url("../fonts/SFMOMADisplayBold.eot");
-  src: url("../fonts/SFMOMADisplayBold.eot?#iefix") format("embedded-opentype"), url("../fonts/SFMOMADisplayBold.woff2") format("woff2"), url("../fonts/SFMOMADisplayBold.woff") format("woff"), url("../fonts/SFMOMADisplayBold.ttf") format("truetype"), url("../fonts/SFMOMADisplayBold.svg#SFMOMADisplayBold") format("svg");
+  src: url("/fonts/SFMOMADisplayBold.eot");
+  src: url("/fonts/SFMOMADisplayBold.eot?#iefix") format("embedded-opentype"), url("/fonts/SFMOMADisplayBold.woff2") format("woff2"), url("/fonts/SFMOMADisplayBold.woff") format("woff"), url("/fonts/SFMOMADisplayBold.ttf") format("truetype"), url("/fonts/SFMOMADisplayBold.svg#SFMOMADisplayBold") format("svg");
 }
 
 @font-face {
   font-family: 'SFMOMADisplayLight';
-  src: url("../fonts/SFMOMADisplayLight.eot");
-  src: url("../fonts/SFMOMADisplayLight.eot?#iefix") format("embedded-opentype"), url("../fonts/SFMOMADisplayLight.woff2") format("woff2"), url("../fonts/SFMOMADisplayLight.woff") format("woff"), url("../fonts/SFMOMADisplayLight.ttf") format("truetype"), url("../fonts/SFMOMADisplayLight.svg#SFMOMADisplayLight") format("svg");
+  src: url("/fonts/SFMOMADisplayLight.eot");
+  src: url("/fonts/SFMOMADisplayLight.eot?#iefix") format("embedded-opentype"), url("/fonts/SFMOMADisplayLight.woff2") format("woff2"), url("/fonts/SFMOMADisplayLight.woff") format("woff"), url("/fonts/SFMOMADisplayLight.ttf") format("truetype"), url("/fonts/SFMOMADisplayLight.svg#SFMOMADisplayLight") format("svg");
 }
 
 
@@ -42,13 +42,10 @@ body {
   width: 100%;
   position: absolute;
   top: 10%;
-  /* left: 20%; */
-  left: 20.25%;
+  left: 20%;
   transform: translate(-50%, -50%);
   text-align: center;
-  /* font-family: 'SFMOMADisplayBold'; */
-  font-family: Helvetica;
-  font-weight: bold;
+  font-family: 'SFMOMADisplayBold';
   color: #ffffff;
   font-size: 5vw;
 }
@@ -68,22 +65,12 @@ button {
   font-size: 1vw;
   cursor: pointer;
   font-family: 'SFMOMADisplayRegular';
-  /* font-family: Helvetica;
-  font-weight: normal; */
   color: white;
 }
 
 #button000 {
   padding: 0.25vw 0.75vw 0.25vw 0.75vw;
   font-size: 1vw;
-}
-
-#button002 {
-  margin-left: 2vw;
-}
-
-#button003 {
-  display: none;
 }
 
 button:focus {
@@ -94,10 +81,6 @@ button:hover {
   background-color: white;
 }
 
-button:active {
-  transform: translateY(0.25vw);
-}
-
 .buttons {
   margin-top: 10%;
 }
@@ -106,17 +89,11 @@ button:active {
   width: 50%;
 }
 
-/* h1 {
-  font-family: helvetica;
-} */
-
 ul {
   list-style: none;
   padding: 0;
   color: white;
   font-family: 'SFMOMADisplayRegular';
-  /* font-family: Helvetica;
-  font-weight: normal; */
   font-size: 1.125vw;
   position: absolute;
   top: 16.5%;
@@ -153,49 +130,20 @@ p {
   margin-bottom: 1vw;
 }
 
-/* .grid {
+.grid {
   display: grid;
-  grid-template-columns: repeat(5, minmax(87px, 0vw));
-  grid-auto-rows: 73px;
-} */
-
-#squares {
-  display: grid;
-  grid-template-columns: repeat(5, minmax(6.75vw, 0vw));
+  grid-template-columns: repeat(5, minmax(6.75vw, 0px));
   grid-auto-rows: 5.5vw;
 }
 
 
-#squares::before {
-  content: '';
-  width: 0;
-  padding-bottom: 100%;
-  grid-row: 1 / 1;
-  grid-column: 1 / 1;
-}
-
-#squares> :first-child {
-  grid-row: 1 / 1;
-  grid-column: 1 / 1;
-}
-
-
-/* Just to make the grid visible */
-#squares > * {
-  background: #ffffff;
-  margin: 0.5px;
-}
-
-#squaresTwo {
-  z-index: -100;
-  position: absolute;
-  top:0%;
+/* .grid {
   display: grid;
-  grid-template-columns: repeat(5, minmax(86.5px, 0vw));
-  grid-auto-rows: 70.5px;
-}
+  grid-template-columns: repeat(5, minmax(87px, 0px));
+  grid-auto-rows: 73px;
+} */
 
-#squaresTwo::before {
+.grid::before {
   content: '';
   width: 0;
   padding-bottom: 100%;
@@ -203,13 +151,16 @@ p {
   grid-column: 1 / 1;
 }
 
-#squaresTwo> :first-child {
+.grid> :first-child {
   grid-row: 1 / 1;
   grid-column: 1 / 1;
 }
 
+
 /* Just to make the grid visible */
-#squaresTwo > * {
+
+.grid>* {
+  background: #ffffff;
   margin: 0.5px;
 }
 
@@ -220,13 +171,9 @@ p {
 
 
 /******** MEDIA QUERY ********/
-/* $small: 576px;
-$medium: 768px;
-$large: 992px;
-$largeplus: 1024px; */
-@media only screen and (max-width: 576px)  {
+@media screen and (min-width: 300px) and (max-width:768px) {
   ul {
-    display: none;
+    display: none !important;
   }
   .header {
     width: 100%;
@@ -235,47 +182,33 @@ $largeplus: 1024px; */
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    font-family: Helvetica;
+    font-family: 'SFMOMADisplayBold';
     color: #ffffff;
     font-size: 14vw;
   }
 
-  #squaresTwo {
-    display: none;
-  }
-
   .container {
     position: absolute;
-    top: 57%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
   }
 
-  #squares {
+  .grid {
     display: grid;
     grid-template-columns: repeat(5, minmax(17.75vw, 0px));
     grid-auto-rows: 15.5vw;
   }
 
   button {
-    border: 0.25vw solid white;
+    border: 0.05vw solid white;
     background-color:transparent;
     padding: 2vw 4vw 2vw 4vw;
     font-size: 4vw;
     cursor: pointer;
     font-family: 'SFMOMADisplayRegular';
     color: white;
-  }
-
-  button:active {
-    transform: translateY(1.75vw);
-  }
-
-  #button003 {
-    margin-left: 10vw;
-    display: inline;
-    padding: 2vw 7vw 2vw 7vw;
   }
 
   .download {

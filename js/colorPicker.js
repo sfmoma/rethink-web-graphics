@@ -9,23 +9,24 @@ if ($(window).width() > $(window).height()) {
     this.target.innerHTML = '#' + color;
     this.target.value = '#' + color;
     hexColor = '#' + color;
-    document.body.style.backgroundColor = '#' + color;
+    document.body.style.backgroundColor = hexColor;
+    document.getElementById("squares").style.backgroundColor = hexColor;
     slider[0].style.background = '#' + color;
     slider[1].style.background = '#' + color;
     buttons[0].addEventListener("mouseover", function(e) {
-      document.getElementById("button000").style.color = '#' + color;
+      document.getElementById("button000").style.color = hexColor;
     });
     buttons[0].addEventListener("mouseout", function(e) {
       document.getElementById("button000").style.color = '#ffffff';
     });
     buttons[1].addEventListener("mouseover", function(e) {
-      document.getElementById("button001").style.color = '#' + color;
+      document.getElementById("button001").style.color = hexColor;
     });
     buttons[1].addEventListener("mouseout", function(e) {
       document.getElementById("button001").style.color = '#ffffff';
     });
     buttons[2].addEventListener("mouseover", function(e) {
-      document.getElementById("button002").style.color = '#' + color;
+      document.getElementById("button002").style.color = hexColor;
     });
     buttons[2].addEventListener("mouseout", function(e) {
       document.getElementById("button002").style.color = '#ffffff';
@@ -33,11 +34,13 @@ if ($(window).width() > $(window).height()) {
   });
 
   function print() {
-    domtoimage.toPng(document.getElementById('squares'), {
+    domtoimage.toPng(document.getElementById('squaresTwo'), {
       quality: 1,
       // bgcolor: 'transparent',
       bgcolor: hexColor,
-      style: { 'margin': '7.5vw 0 0 8.5vw'},
+      style: {
+        'margin': '5.75vw 0 0 8.5vw'
+      },
       height: 500,
       width: 525
     })

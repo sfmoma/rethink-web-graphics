@@ -37,24 +37,10 @@ function generate() {
   var duration = 1000;
 
   /******** RESET ANIMATION ********/
-  var c = document.getElementById("squares").children;
-  var c1 = document.getElementById("squaresTwo").children;
+  var c = document.getElementById("squaresTwo").children;
   for (var i = 0; i < c.length; i++) {
     c[i].style.backgroundColor = "#ffffff";
-    c1[i].style.backgroundColor = "#ffffff";
     $(c[i])
-    .css({
-      borderTopLeftRadius:curivness,
-      borderTopRightRadius:curivness,
-      borderBottomLeftRadius:curivness,
-      borderBottomRightRadius:curivness})
-    .animate({
-      borderTopLeftRadius: 0,
-      borderTopRightRadius: 0,
-      borderBottomLeftRadius: 0,
-      borderBottomRightRadius: 0
-    }, duration);
-    $(c1[i])
     .css({
       borderTopLeftRadius:curivness,
       borderTopRightRadius:curivness,
@@ -126,19 +112,9 @@ function generate() {
           borderTopLeftRadius:0})
         .animate({
           borderTopLeftRadius: targetCurves[i]}, duration);
-        $(c1[targetSquares[i]])
-        .css({
-          borderTopLeftRadius:0})
-        .animate({
-          borderTopLeftRadius: targetCurves[i]}, duration);
       }
       else if (targetCorner[i] == 1) {
         $(c[targetSquares[i]])
-        .css({
-          borderTopRightRadius:0})
-        .animate({
-          borderTopRightRadius: targetCurves[i]}, duration);
-        $(c1[targetSquares[i]])
         .css({
           borderTopRightRadius:0})
         .animate({
@@ -150,19 +126,9 @@ function generate() {
           borderBottomRightRadius:0})
         .animate({
           borderBottomRightRadius: targetCurves[i]}, duration);
-        $(c1[targetSquares[i]])
-        .css({
-          borderBottomRightRadius:0})
-        .animate({
-          borderBottomRightRadius: targetCurves[i]}, duration);
       }
       else if (targetCorner[i] == 3) {
         $(c[targetSquares[i]])
-        .css({
-          borderBottomLeftRadius:0})
-        .animate({
-          borderBottomLeftRadius: targetCurves[i]}, duration);
-        $(c1[targetSquares[i]])
         .css({
           borderBottomLeftRadius:0})
         .animate({
@@ -183,19 +149,9 @@ function generate() {
           borderTopLeftRadius:0})
         .animate({
           borderTopLeftRadius: curivness}, duration);
-        $(c1[targetSquares[i]])
-        .css({
-          borderTopLeftRadius:0})
-        .animate({
-          borderTopLeftRadius: curivness}, duration);
       }
       else if (targetCorner[i] == 1) {
         $(c[targetSquares[i]])
-        .css({
-          borderTopRightRadius:0})
-        .animate({
-          borderTopRightRadius: curivness}, duration);
-        $(c1[targetSquares[i]])
         .css({
           borderTopRightRadius:0})
         .animate({
@@ -207,19 +163,9 @@ function generate() {
           borderBottomRightRadius:0})
         .animate({
           borderBottomRightRadius: curivness}, duration);
-        $(c1[targetSquares[i]])
-        .css({
-          borderBottomRightRadius:0})
-        .animate({
-          borderBottomRightRadius: curivness}, duration);
       }
       else if (targetCorner[i] == 3) {
         $(c[targetSquares[i]])
-        .css({
-          borderBottomLeftRadius:0})
-        .animate({
-          borderBottomLeftRadius: curivness}, duration);
-        $(c1[targetSquares[i]])
         .css({
           borderBottomLeftRadius:0})
         .animate({
