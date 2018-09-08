@@ -34,12 +34,16 @@ if ($(window).width() > $(window).height()) {
   });
 
   function print() {
+    var c1 = document.getElementById("squaresTwo").children;
+    for (var i = 0; i < c1.length; i++) {
+      c1[i].style.backgroundColor = "#ffffff";
+    }
     domtoimage.toPng(document.getElementById('squaresTwo'), {
       quality: 1,
       // bgcolor: 'transparent',
       bgcolor: hexColor,
       style: {
-        'margin': '5.75vw 0 0 8.5vw'
+        'margin': '7vw 0 0 8.5vw'
       },
       height: 500,
       width: 525
