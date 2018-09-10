@@ -1,136 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>Rethink: Web</title>
-    <script src="http://localhost:35729/livereload.js" charset="utf-8"></script>
-    <link rel="icon" href="ico/004.png" size="16 x 16">
-    <link rel="stylesheet" href="css/rangeslider.css">
-    <link href="css/color-picker.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/rethink.css">
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Rethink: Web (Logo)</title>
+  <script src="http://localhost:35729/livereload.js" charset="utf-8"></script>
+  <link rel="icon" href="ico/004.png" size="16 x 16">
+  <link rel="stylesheet" href="css/rangeslider.css">
+  <link href="css/color-picker.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/rethink.css">
+</head>
 
-  <body>
-    <div class="header">Rethink: Web</div>
-    <ul>
-      <li id = "textList">
-        <div id = "text">
-          <h1>About</h1>
-          As the internet proliferated over the past two decades certain design patterns have emerged that provide a predictable browsing experience. This serves the purpose of commerce well, a predictable vernacular means less time between finding the site and making a purchase. However, this phenomena has also served to winnow the breadth of experiences available. Many tools have been developed that provide helpful frameworks for quickly building commerce driven sites, but also served to cement a narrow user experience. What we are seeing manifest in the modern web is a platform built to serve commerce and marketing, not a platform built towards exploration, collaboration and connectivity.
-        </div>
-      </li>
-      <li id = "textList">
-        <div id = "text">
-          ------------------------------------------------------------------------------------------------------
-        </div>
-      </li>
-      <li id = "textList">
-        <div id = "text">
-          <h1>Make a logo</h1>
-        </div>
-      </li>
-      <li>
-        <div class="colorPick">
-          Choose a background color:
-          <p><button id="button000" data-color="#ff473c">#ff473c</button></p>
-        </div>
-      </li>
-      <li>
-        <p id = "sliderP" >Choose amount of rectangles to affect</p>
-        <input type="range1" min="0" max="16">
-      </li>
-      <li>
-        <p id = "sliderP" >Choose curvature of rectangles</p>
-        <input type="range2" min="50" max="70">
-      </li>
-      <li>
-        <a target="_blank" href="https://www.sfmoma.org/series/sfmoma-lab/">
+<body>
+  <div class="header">Rethink: Web</div>
+  <ul>
+    <li id="textList">
+      <div id="text">
+        <!-- <h1>About</h1> The grid has played a colossal role in the practice of graphic design since the Constructivist, De Stijl, and Bauhaus movements of the early 20th century presented a new form of design informed by the use of the grid. An underlying invisible
+        structure that controls the display of content within two dimensions, the grid acts as an authoritarian figure creating an orderly system of visual information. Author of Grid Systems in Graphic Design (1981), Josef Müller-Brockmann states, “The
+        use of the grid system implies the will to systematize…cultivate objectivity instead of subjectivity…and to rationalize the creative and technical production process…” (10). Although this tool and its techniques ultimately created the modern design
+        language we witness today, it has stifled the growth of an environment only 28 years old: the Web. Designers of the Web today are constantly pushed to adhere to a grid based design, which is usually applied to a predisposed grid template created
+        by a developer who has no training in the creative fields. This grid then informs the aesthetics, interface, and tangibility of a website. With template based services such as Bootstrap, WordPress, and Squarespace, the grid has further become
+        a commoditized tool that takes away from the freedom, subjectivity, and creativity the Web has to offer. As graphic designers today are attempting to break the grid, so too are the designers of the web. The Rethink: Web logo was designed as a
+        piece to reflect not only the ideologies behind Rethink: Web but as a symbol regarding the speculative future of the relationship between the Web and the grid. Individual pieces within the grid itself represent the constraint of the four cornered
+        two dimensional screen all browsers adhere by. The organic curves and form generated through user input then create an abstracted grid that does not follow the basic ontology of a grid, stating there is room to modify the Web’s identity and its
+        relationship to the grid and eventually morph to a new design paradigm. These grids are created through a set of user inputs: color, amount of rectangles to affect, and curvature of rectangles fed through a procedural generation algorithm. Through
+        this web based application, designers of Rethink: Web are encouraged to create a new logo for each new design solution related to the program, allowing for the design system of Rethink: Web to be continuous and ever-changing, just like the Web. -->
+        <h1>About</h1>
+        As graphic designers today are attempting to break the grid, so too are the designers of the web. The Rethink: Web logo was designed as a piece to reflect not only the ideologies behind Rethink: Web but as a symbol regarding the speculative future of the relationship between the Web and the grid. Individual pieces within the grid itself represent the constraint of the four cornered two dimensional screen all browsers adhere by. The organic curves and form generated through user input then create an abstracted grid that does not allow for the basic ontology of a grid, stating there is room to modify the web’s identity and its relationship to the grid and eventually morph to a new design paradigm. Through this web based application, designers of Rethink: Web are encouraged to create a new logo for each new design solution related to the program, allowing for the design system of Rethink: Web to be continuous and ever-changing, just like the web.
+      </div>
+    </li>
+    <li id="textList">
+      <div id="line">
+        ------------------------------------------------------------------------------------------------------
+      </div>
+    </li>
+    <li id="textList">
+      <div id="text">
+        <h1>Make a logo</h1>
+      </div>
+    </li>
+    <li>
+      <div class="colorPick">
+        Choose a background color:
+        <p><button id="button000" data-color="#ff473c">#ff473c</button></p>
+      </div>
+    </li>
+    <li>
+      <p id="sliderP">Choose amount of rectangles to affect</p>
+      <input type="range1" min="0" max="16">
+    </li>
+    <li>
+      <p id="sliderP">Choose curvature of rectangles</p>
+      <input type="range2" min="50" max="70">
+    </li>
+    <li>
+      <a target="_blank" href="https://www.sfmoma.org/series/sfmoma-lab/">
           <svg id = "sfmoma" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 390.37 146.63"><title>001Asset 2003</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path d="M187.6,28.71,174.34,67.54H157.76L144.69,28.14l-3.93,39.41H124L130.1,1.23H153l14.16,41.21L181.06,1.23h22.45l5.68,66.31H191.53Z" style="fill:#fff"/><path d="M286,34.38c0,19.8-14.54,34.39-35,34.39s-35-14.59-35-34.39S230.48,0,251,0,286,14.59,286,34.38Zm-52.2,0c0,10.7,7.29,18.66,17.15,18.66s16.91-8,16.91-18.66c0-10.47-7.06-18-16.91-18S233.85,24,233.85,34.43Z" style="fill:#fff"/><path d="M293.91,107.79l-13.26,38.84H264.08L251,107.22l-3.93,39.41H230.3l6.11-66.31h22.88l14.16,41.21,13.93-41.21h22.45l5.68,66.31H297.84Z" style="fill:#fff"/><path d="M343,137.58l-3.27,9H322.12L346.6,80.31h19.32l24.44,66.31H371.8l-3.22-9Zm12.84-35.66-7.53,20.89h15Z" style="fill:#fff"/><path d="M82.6,72.42h26V88h-26v22.07h-18V43.81h47.08v16H82.6Z" style="fill:#fff"/><path d="M44.23,63.15c-1.1-.86-7.67-5-14.24-5-6.76,0-9.85,1.71-9.85,5.33s5.09,4.86,11.47,6.14l1.14.24C42.8,72,55.18,75.2,55.18,90.2c0,14.14-12.24,21.33-28,21.33-10.29,0-20.57-3.24-27.14-9.81L10.09,89.44A26.07,26.07,0,0,0,26.52,96c8.52,0,11.14-2.33,11.14-5.33,0-4.48-5.62-5.67-12.33-7.14l-1-.24c-9.86-2.1-21.43-5-21.43-19.52C2.86,50,14.67,42.39,30,42.39c8.76,0,18.19,2,24.76,7.62Z" style="fill:#fff"/></g></g>
           </svg>
         </a>
-      </li>
-    </ul>
-    <div id = "contain" class="container">
-      <div id="squares">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
-      <div id="squaresTwo">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
-
-
-
-      <div class="buttons">
-        <button id="button001" class="btn generate" onclick="generate()" type="button" name="button">generate</button>
-        <button id="button002" class="btn download" onclick="print()" type="button" name="button">download</button>
-        <button id="button003" class="btn color" onclick="color()" type="button" name="button">color</button>
-      </div>
+    </li>
+  </ul>
+  <div id="contain" class="container">
+    <div id="squares">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/rangeslider.js/2.3.0/rangeslider.min.js'></script>
-    <script src="lib/color-picker.js"></script>
-    <script src="lib/dom-to-image.js" charset="utf-8"></script>
-    <script src="js/colorPicker.js" charset="utf-8"></script>
-    <script src="js/001.js" charset="utf-8"></script>
-  </body>
+    <div id="squaresTwo">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+
+
+
+    <div class="buttons">
+      <button id="button001" class="btn generate" onclick="generate()" type="button" name="button">generate</button>
+      <button id="button002" class="btn download" onclick="print()" type="button" name="button">download</button>
+      <button id="button003" class="btn color" onclick="color()" type="button" name="button">color</button>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/rangeslider.js/2.3.0/rangeslider.min.js'></script>
+  <script src="lib/color-picker.js"></script>
+  <script src="lib/dom-to-image.js" charset="utf-8"></script>
+  <script src="js/colorPicker.js" charset="utf-8"></script>
+  <script src="js/001.js" charset="utf-8"></script>
+</body>
+
 </html>

@@ -132,7 +132,7 @@ p {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(5, minmax(6.75vw, 0px));
+  grid-template-columns: repeat(5, minmax(8.75vw, 0px));
   grid-auto-rows: 5.5vw;
 }
 

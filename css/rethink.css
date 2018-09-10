@@ -55,8 +55,8 @@ body {
 
 .container {
   position: absolute;
-  top: 55.5%;
-  left: 75%;
+  top: 57%;
+  left: 77%;
   transform: translate(-50%, -50%);
   text-align: center;
 }
@@ -102,9 +102,7 @@ button:active {
   margin-top: 10%;
 }
 
-.text {
-  width: 50%;
-}
+
 
 /* h1 {
   font-family: helvetica;
@@ -151,6 +149,13 @@ p {
   font-size: 1.125vw;
   margin-left: 0;
   margin-bottom: 1vw;
+  line-height: 1.625vw;
+}
+
+#line {
+  font-family: 'SFMOMADisplayLight';
+  font-size: 1.125vw;
+  margin-bottom: 1vw;
 }
 
 /* .grid {
@@ -191,8 +196,8 @@ p {
   position: absolute;
   top:0%;
   display: grid;
-  grid-template-columns: repeat(5, minmax(86.5px, 0vw));
-  grid-auto-rows: 70.5px;
+  grid-template-columns: repeat(5, minmax(86.25px, 0vw));
+  grid-auto-rows: 70.25px;
 }
 
 #squaresTwo::before {
@@ -214,8 +219,9 @@ p {
 }
 
 #sfmoma {
-  margin-top: 30%;
+  margin-top: 15%;
   width: 30%;
+  display: none;
 }
 
 
