@@ -53,7 +53,7 @@ body {
 .container {
   position: absolute;
   top: 57%;
-  left: 77%;
+  left: 78%;
   transform: translate(-50%, -50%);
   text-align: center;
 }
@@ -225,9 +225,12 @@ p {
 }
 
 #sfmoma {
-  margin-top: 15%;
-  width: 30%;
-  display: none;
+width: 8.5%;
+margin-top: 1.25%;
+position: absolute;
+float: right;
+left: 116vw;
+  /* display: none; */
 }
 
 
