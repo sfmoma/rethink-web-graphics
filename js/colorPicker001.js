@@ -1,9 +1,3 @@
-// var picker = new CP(document.querySelector('input'));
-//
-//     picker.on("change", function(color) {
-//         this.source.value = '#' + color;
-//     });
-
 var picker = new CP(document.querySelector('input'));
 var buttons = document.querySelectorAll('button');
 var slider = document.getElementsByClassName("rangeslider__handle");
@@ -40,14 +34,14 @@ if ($(window).width() > $(window).height()) {
   function print() {
     var c1 = document.getElementById("squaresTwo").children;
     for (var i = 0; i < c1.length; i++) {
-      c1[i].style.backgroundColor = "#ffffff";
+      c1[i].style.backgroundColor = "white";
     }
     domtoimage.toPng(document.getElementById('squaresTwo'), {
       quality: 1,
       // bgcolor: 'transparent',
       bgcolor: hexColor,
       style: {
-        'margin': '7vw 0 0 8.5vw'
+        'margin': '7.5vw 0 0 8.95vw'
       },
       height: 500,
       width: 525
