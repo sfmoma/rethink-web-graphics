@@ -1,1 +1,1 @@
-# rethink-logo002
+# rethink-web-graphics
