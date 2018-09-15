@@ -305,4 +305,8 @@ $largeplus: 1024px; */
   .download {
     display: none;
   }
+
+  #sfmoma {
+    display: none;
+  }
 }
