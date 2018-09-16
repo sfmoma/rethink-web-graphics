@@ -1,25 +1,20 @@
-/******** FONTS ********/
-@font-face {
-  font-family: 'SFMOMADisplayLight';
-  src: url("../fonts/SFMOMADisplayLight.eot");
-  src: url("../fonts/SFMOMADisplayLight.eot?#iefix") format("embedded-opentype"), url("../fonts/SFMOMADisplayLight.woff2") format("woff2"), url("../fonts/SFMOMADisplayLight.woff") format("woff"), url("../fonts/SFMOMADisplayLight.ttf") format("truetype"), url("../fonts/SFMOMADisplayLight.svg#SFMOMADisplayLight") format("svg");
-}
-
-@font-face {
-  font-family: 'SFMOMADisplayRegular';
-  src: url("../fonts/SFMOMADisplayRegular.eot");
-  src: url("../fonts/SFMOMADisplayRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/SFMOMADisplayRegular.woff2") format("woff2"), url("../fonts/SFMOMADisplayRegular.woff") format("woff"), url("../fonts/SFMOMADisplayRegular.ttf") format("truetype"), url("../fonts/SFMOMADisplayRegular.svg#SFMOMADisplayRegular") format("svg");
-}
-
-@font-face {
-  font-family: 'SFMOMADisplayBold';
-  src: url("../fonts/SFMOMADisplayBold.eot");
-  src: url("../fonts/SFMOMADisplayBold.eot?#iefix") format("embedded-opentype"), url("../fonts/SFMOMADisplayBold.woff2") format("woff2"), url("../fonts/SFMOMADisplayBold.woff") format("woff"), url("../fonts/SFMOMADisplayBold.ttf") format("truetype"), url("../fonts/SFMOMADisplayBold.svg#SFMOMADisplayBold") format("svg");
-}
-/******** END FONTS ********/
 
 :root {
   --main-color: ;
+}
+
+a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 h1 {
@@ -100,7 +95,7 @@ button:active {
 
 input {
   border: 0.05vw solid white;
-  width: 3.5vw;
+  width: 4vw;
   background-color: transparent;
   padding: 0.25vw 0.5vw 0.25vw 0.75vw;
   font-size: 1vw;
@@ -154,7 +149,7 @@ p {
 }
 
 #textList {
-  width: 50%;
+  width: 51.25%;
 }
 
 #text {
