@@ -97,7 +97,7 @@ input {
   border: 0.05vw solid white;
   width: 4.5vw;
   background-color: transparent;
-  padding: 0.25vw 0.25vw 0.25vw 0.75vw;
+  padding: 0.25vw 0.3vw 0.25vw 0.75vw;
   font-size: 1vw;
   /* cursor: pointer; */
   font-family: Helvetica;
