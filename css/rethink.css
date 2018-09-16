@@ -149,7 +149,8 @@ p {
 }
 
 #textList {
-  width: 51.25%;
+  width: 52%;
+  text-align: justify;
 }
 
 #text {
